@@ -6,21 +6,57 @@ namespace myImages {
             case "image1":
             case "Dog":return img`
 . . . . . . . . . . . . . . . . 
-. . 4 4 4 . . . . 4 4 4 . . . . 
-. 4 5 5 5 e . . e 5 5 5 4 . . . 
-4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
-4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
-e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
-. e e 5 5 5 5 5 5 5 5 e e . . . 
-. . e 5 f 5 5 5 5 f 5 e . . . . 
-. . f 5 5 5 4 4 5 5 5 f . f f . 
-. . . 4 5 5 f f 5 5 6 f f 5 f . 
-. . . f 6 6 6 6 6 6 4 f 5 5 f . 
-. . . f 5 5 5 5 5 5 5 4 5 f . . 
-. . . . f 5 4 5 f 5 f f f . . . 
-. . . . . f f f f f f f . . . . 
+. . f . . . . . . . . . f . . . 
+. f e f . . . . . . . f e f . . 
+f e e e f . . . . . f e e e f . 
+f 3 3 e e f . f . f e e 3 3 f . 
+f e 3 3 e f f e f f e 3 3 e f . 
+f e 3 f f f e e e f f f 3 e f . 
+f e e f e e e e e e e f e e f . 
+. f e f e 8 8 e 8 8 e f e f . . 
+. . f f e 8 6 e 8 6 e f f . . . 
+. . . f e e e f e e e f . . . . 
+. . . f e f e f e f e f . . . . 
+. . . f e e f f f e e f . . . . 
+. . . . f e e e e e f . . . . . 
+. . . . . 2 2 5 2 2 . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image2":
+            case "Bone":return img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . 1 1 . . . . . . 1 1 . . . 
+. . . 1 1 1 . . . . 1 1 1 . . . 
+. . . . 1 1 1 1 1 1 1 1 . . . . 
+. . . 1 1 1 . . . . 1 1 1 . . . 
+. . . 1 1 . . . . . . 1 1 . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image3":
+            case "dog":return img`
+. . f f f . . . . f f f . . . . 
+. f e e e f . . f e e e f . . . 
+f e e e e e f f e e e e e f . . 
+f e e 3 3 e e e e 3 3 e e f . . 
+f e 3 3 e e e e e e 3 3 e f . . 
+. f f e 8 8 e e 8 8 e f f . . . 
+. . f e 8 1 e e 8 1 e f . . . . 
+. . f e e e e e e e e f . . f f 
+. . f e e f f f e e e f . f e f 
+. . . f e e f e e e e 2 f e e f 
+. . . f 2 2 2 2 2 2 2 e e e f . 
+. . . f e e e e e e e e f f . . 
+. . . f e f f f e f f e f . . . 
+. . . f f . . f f . . f f . . . 
 `;
         }
         return null;
