@@ -72,3 +72,4 @@ game.onUpdateInterval(500, function() {
     myDog.setPosition(Math.randomRange(0,160), 0)
     myDog.setKind(SpriteKind.Enemy)
 })
+
