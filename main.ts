@@ -1,5 +1,6 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function(sprite, otherSprite: Sprite) {
     info.changeLifeBy(-1)
+    info.changeScoreBy(-1)
     otherSprite.destroy(effects.ashes, 100)
     music.powerDown.play()
 })
@@ -9,6 +10,12 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function(sprite, othe
      sprite.destroy()
 })
 
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function(sprite, otherSprite: Sprite) {
+    otherSprite.setPosition(randint(0,160), randint(0,120))
+    info.changeScoreBy(1)
+})
+
+
 controller.A.onEvent(ControllerButtonEvent.Pressed, function (){
     bone = sprites.createProjectileFromSide(assets.image`Bone`,0,-100)
     bone.setPosition(myCat.x, myCat.y)
@@ -17,30 +24,21 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function (){
 
 scene.setBackgroundColor(10)
 
-let myCat = sprites.create(img`
-    . . . . . . . . . . . . . .
-    e e e . . . . e e e . . . .
-    c d d c . . c d d c . . . .
-    c b d d f f d d b c . . . .
-    c 3 b d d b d b 3 c . . . .
-    f b 3 d d d d 3 b f . . . .
-    e d d d d d d d d e . . . .
-    e d f d d d d f d e . b f b
-    f d d f d d f d d f . f d f
-    f b d d b b d d 2 b f f d f
-    . f 2 2 2 2 2 2 d b b d b f
-    . f d d d d d d d f f f f .
-    . . f d b d f d f . . . . .
-    . . . f f f f f f . . . . .
-`, SpriteKind.Player )
+let myCat = sprites.create(assets.image`cat`, SpriteKind.Player )
 let bone: Sprite = null
 let myDog : Sprite = null
+let mouse = sprites.create(assets.image`Mouse`
+,SpriteKind.Food)
+let mouse_trap  =sprites.create(assets.image`fish`
+,SpriteKind.Food)
+
 
 controller.moveSprite(myCat)
 myCat.setStayInScreen(true)
 info.setLife(3)
 info.setScore(0)
 info.startCountdown(30)
+game.splash("VÍTEJ VE HŘE! Tvá role je kočka, kterou musíš nakrmit. Dej si pozor na správné jídlo a na pejsky, kteří se ti snaží v cestě zabránit.")
 
 
 /*game.onUpdateInterval(1200, function(){

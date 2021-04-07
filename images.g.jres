@@ -14,6 +14,31 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "dog"
     },
+    "image4": {
+        "data": "hwQOAA4AAADw/////wAAAPAzs7u7/wAA8Duzd7u1DwAAv7v3+7X7AADwu7s/tfsAAPC7d/u1+wAAv7v3u7X/APA7s7u7tfsA8DOzu1u7/wDw////v/sAAAAAAADw+wAAAAAA8P/7AAAAAADwsfsAAAAAAPD/DwAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "cat"
+    },
+    "image5": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAiAAAAAAAAAgIiAAAAACAAIAACAAAAIAAgACACAAAgAiAAIAAAAAAiICAiAAAAACIiAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "mouse"
+    },
+    "image7": {
+        "data": "hwQQABAAAADQ3QAAAAAAAN3dDdANAAAA3czd3d3QDQDdzP3/390NANDd/fHf3d0LAN3d3R0dEQsAANDdsR0RAADd3d0dHREL0N39/9/d3QvdzP3x3929AN3M3d3d0L0A3d0N0A0ACwDQ3QAAAACwAAAAAAAAAAsAAAAAAACwAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Mouse"
+    },
+    "image6": {
+        "data": "hwQgACAAAAAAAAAAAAAAu6qqqgAAAAAAAAAAAACwu9Pd3bPuAAAAAAAAAACwO93dbd09uu4AAAAAAAAAO91jNnY4PavrDgAAAAAAsNMzmzh2ONO7uu4AAAAAADs9Y4kzdjjTs7q+DgAAALAzM2M4M2Y70z2r6w4AAAA7NDMzMzMzMzPdo+vrAACwQyUzMzMzMzMjM73q6wAAO0MlMzMzMzMzVDI9uusAADtDNDMzs7szM1QyPbu7DrAzMzPTs6q7MzNE06O0tA6wMzMzPTujOiMzMzNKtLQOYDYz070zqjNCPjMzSrREDmuHM9OzozozQj4zs0q7RA5rhzPTO6ozMyMzM6NEs0QOa4cz0zu6MzMzM9OrRLPkADs2MzO7OzMzM2bdSjRD5AA7MzMzuzMzM2OJPUo0S+QAOzMzMzMzMzOWOD1KNEQOADszMzMzYzgzhjOtRLNEDgCwhjNEM2OHMzPTo0RD5AAAoJY4VDIzdjjTPUo0S+QAAKBjiVQyM2M2M6NEtEQOAAAAOmYjMyMzM6tKREvkAAAAADozMzNCPqtKRLREDgAAAACgMzMzQr5KRERL5AAAAAAAoLrT3SOzRES7RA4AAAAAAACqqqq6S7S7ROQAAAAAAAAA4O5LRLTuS+QOAAAAAAAAAADg7u7uu+sOAAAAAAAAAAAAAADu7u4OAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "donut"
+    },
+    "image8": {
+        "data": "hwQQABAAAAAAAADw/wAAAAAAAExEDwAAAADARET0AAAAAExERPQAAADARERPRA8AAMxNRETUDwDATBQREUH0AMBMRBRMTPQA3ExExERM9ADcTET0/0T0ANzcRERERNwM3M3RRETN3QzAzBwR0f/bDAAAzPT/D8wAAMBERPQAAAAAwPz//wAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "fish"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
