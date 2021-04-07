@@ -55,6 +55,7 @@ myCat.setStayInScreen(true)
 info.setLife(5)
 info.setScore(2)
 info.startCountdown(30)
+let plus=10
 game.splash("VÍTEJ VE HŘE! Tvá role je kočka, kterou musíš nakrmit. Dej si pozor na správné jídlo a na pejsky, kteří se ti snaží v cestě zabránit.")
 
 
@@ -71,5 +72,9 @@ game.onUpdateInterval(500, function() {
     myDog = sprites.createProjectileFromSide(assets.image`dog`, Math.randomRange(-20,20), Math.randomRange(60,80))
     myDog.setPosition(Math.randomRange(0,160), 0)
     myDog.setKind(SpriteKind.Enemy)
+    if (info.score()>= plus){
+        plus +=10
+        info.changeLifeBy(+1)
+}
 })
 
