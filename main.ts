@@ -52,7 +52,7 @@ let ice_cream  =sprites.create(assets.image`ice cream`
 
 controller.moveSprite(myCat)
 myCat.setStayInScreen(true)
-info.setLife(3)
+info.setLife(5)
 info.setScore(2)
 info.startCountdown(30)
 game.splash("VÍTEJ VE HŘE! Tvá role je kočka, kterou musíš nakrmit. Dej si pozor na správné jídlo a na pejsky, kteří se ti snaží v cestě zabránit.")
