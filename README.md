@@ -1,6 +1,5 @@
  
 
-
 > Open this page at [https://samhell019.github.io/catch-a-mouse-/](https://samhell019.github.io/catch-a-mouse-/)
 
 ## Use as Extension
