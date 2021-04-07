@@ -5,14 +5,29 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function(sprite, otherSpr
     music.powerDown.play()
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function(sprite, otherSprite: Sprite) {
-    info.changeScoreBy(1)
      otherSprite.destroy(effects.hearts, 100)
      sprite.destroy()
 })
 
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function(sprite, otherSprite: Sprite) {
+    if (otherSprite==mouse){
     otherSprite.setPosition(randint(0,160), randint(0,120))
     info.changeScoreBy(1)
+    sprite.say("+" + 1, 200)
+    }
+    if (otherSprite==fish){
+    otherSprite.setPosition(randint(0,160), randint(0,120))
+    info.changeScoreBy(1)}
+    sprite.say("+" + 1, 200)
+    if (otherSprite==ice_cream){
+    otherSprite.setPosition(randint(0,160), randint(0,120))
+    info.changeLifeBy(-1)
+    info.changeScoreBy(-3)
+    sprite.say("-" + 1, 200)
+    if (info.score() < 0){
+    game.over()
+    }
+    }
 })
 
 
@@ -29,14 +44,16 @@ let bone: Sprite = null
 let myDog : Sprite = null
 let mouse = sprites.create(assets.image`Mouse`
 ,SpriteKind.Food)
-let mouse_trap  =sprites.create(assets.image`fish`
+let fish  =sprites.create(assets.image`fish`
+,SpriteKind.Food)
+let ice_cream  =sprites.create(assets.image`ice cream`
 ,SpriteKind.Food)
 
 
 controller.moveSprite(myCat)
 myCat.setStayInScreen(true)
 info.setLife(3)
-info.setScore(0)
+info.setScore(2)
 info.startCountdown(30)
 game.splash("VÍTEJ VE HŘE! Tvá role je kočka, kterou musíš nakrmit. Dej si pozor na správné jídlo a na pejsky, kteří se ti snaží v cestě zabránit.")
 
